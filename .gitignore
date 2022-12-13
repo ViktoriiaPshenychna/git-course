@@ -30,8 +30,9 @@ build/Release
 # production
 /build
 /dist
+app/css/
 
-# Dependency directories 
+# Dependency directories
 node_modules/
 /.pnp
 .pnp.jsonapp/css
