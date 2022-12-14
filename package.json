@@ -24,6 +24,7 @@
   "homepage": "https://github.com/ViktoriiaPshenychna/git-course#readme",
   "devDependencies": {
     "browser-sync": "^2.27.10",
+    "cssmin": "^0.4.3",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -33,6 +34,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery-form-styler": "^2.0.2",
+    "jsmin": "^1.0.1",
     "magnific-popup": "^1.1.0",
     "sass": "^1.56.1",
     "slick-carousel": "^1.8.1"
