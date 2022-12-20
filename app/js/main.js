@@ -28,5 +28,13 @@ $(function() {
         // autoplay: true
     });
 
+    //Load more
+    $('#loadMore').click(function () {
+        $('#boxs .box:hidden').slice(0, 4).slideDown()
+        if (($('#boxs .box:hidden')).length == 0) {
+            $('#loadMore').fadeOut('slow')
+        }
+    });
+
 
 });
