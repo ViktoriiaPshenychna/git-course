@@ -36,8 +36,15 @@ $(function() {
         }
     });
 
+     //Load more new items
+     $('#newItemsLoadMore').click(function () {
+        $('#newBoxs .newBoxs:hidden').slice(0, 4).slideDown()
+        if (($('#newBoxs .newBoxs:hidden')).length == 0) {
+            $('#newItemsLoadMore').fadeOut('slow')
+        }
+    });
+
     // Collections slider
-    //slider
     $(".collections__inner").slick({
         dots: false,
         arrows: true,

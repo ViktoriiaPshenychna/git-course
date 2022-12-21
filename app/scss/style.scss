@@ -390,7 +390,8 @@
 
 //sales-leaders styles
 
-.sales-leaders {
+.sales-leaders,
+.new-items {
     padding: 100px 0;
 
     &__title {
@@ -418,6 +419,11 @@
         transition: all 0.3s;
 
         & .sales-leaders__hidden {
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        & .new-items__hidden {
             opacity: 0;
             transition: all 0.3s;
         }
@@ -538,6 +544,10 @@
             opacity: 1;
         }
 
+        & .new-items__hidden {
+            opacity: 1;
+        }
+
     }
 
     &__buy {
@@ -604,6 +614,10 @@
     display: none;
 }
 
+#newBoxs .newBoxs:nth-child(n + 4) {
+    display: none;
+}
+
 @keyframes animate {
     0% {
         transform: rotate(0deg);
@@ -618,9 +632,9 @@
 //collections section styles
 
 .collections {
-    padding-bottom: 150px;
 
     &__mainTitle  {
+        text-align: center;
         margin-bottom: 20px;
 
     }
@@ -689,6 +703,9 @@
         width: 100%;
         box-shadow: 0 20px 50px rgba(0, 0 , 0, 0.1);
         padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         &__img img {
             max-height: 662px;
