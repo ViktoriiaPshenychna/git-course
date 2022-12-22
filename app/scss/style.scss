@@ -934,4 +934,74 @@
     }
 }
 
+//footer styles
+.footer {
+   
+    &__inner {
+        background-color: $gray;
+        padding: 100px 180px 0;
+
+        &-title {
+            margin-bottom: 70px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 0 15px;
+
+        &-title {
+            font-size: 20px;
+            @include f600;
+            margin-bottom: 24px;
+        }
+
+        &-list li {
+            margin: 16px 0;
+        }
+
+        &-list li a:hover{
+            color: $hoverText;
+        }
+
+        &-list li a img {
+            max-width: 114px;
+            width: 100%;
+        }
+    }
+
+    &__bottom {
+        padding: 110px 0 50px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-copy {
+            font-size: 14px;
+            @include f600;
+        }
+
+        &-privaciPolicy,
+        &-termsOfUse {
+            font-size: 14px;
+            @include f500;
+            line-height: 1.715;
+            transition: color 0.3s ease;
+            color: $hoverText;
+            cursor: pointer;
+        }
+
+        &-privaciPolicy:hover,
+        &-termsOfUse:hover {
+            color: $text;
+        }
+    }
+}
+
 @import "_media";
